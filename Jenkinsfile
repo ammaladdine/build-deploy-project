@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("checkout"){
       steps{
-          checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'achyuth', url: 'https://github.com/ammaladdine/GitTag.git']]])
+           checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], gitTool: 'achyuth501', userRemoteConfigs: [[credentialsId: 'achyuth', url: 'https://github.com/ammaladdine/build-deploy-project.git']]])
          }
        }
     stage("bulid"){ 
