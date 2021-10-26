@@ -21,5 +21,12 @@ pipeline{
           """
       }
     }
+    stage("pakage"){ 
+      steps{
+          sh """
+            mvn pakage
+          """
+      }
+    }  
   }
 }
