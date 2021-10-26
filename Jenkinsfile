@@ -21,10 +21,10 @@ pipeline{
           """
       }
     }
-    stage("pakage"){ 
+    stage("package"){ 
       steps{
           sh """
-            mvn pakage
+            mvn package
           """
       }
     }  
